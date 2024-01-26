@@ -1,3 +1,2 @@
-# osctorand.github.io
 
-haris lekplats
+# osctorand.github.io
