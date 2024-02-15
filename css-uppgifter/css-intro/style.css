@@ -1,0 +1,13 @@
+
+.rubrik {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.marked {
+  background-color: yellow;
+}
+
+.emphasized {
+  font-style: italic;
+}
