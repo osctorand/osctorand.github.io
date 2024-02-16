@@ -1,0 +1,19 @@
+#goose {
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#rubrik {
+    font-style: italic;
+    font-weight: bold;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+hr#line {
+    border: 1px solid blue;
+}
+

@@ -1,13 +1,71 @@
-
 .rubrik {
-  font-style: italic;
-  font-weight: bold;
+    font-style: italic;
+    font-weight: bold;
 }
 
 .marked {
-  background-color: yellow;
+    background-color: yellow;
 }
 
 .emphasized {
-  font-style: italic;
+    font-style: italic;
+}
+
+#skumfont {
+    font-family: "Impact", sans-serif;
+    font-size: 124%;
+    color: burlywood;
+    text-shadow: 10px 10px 2px #000000;
+    letter-spacing: 0.05em;
+    
+}
+
+.space20px {
+    letter-spacing: 20px;
+}
+
+.space10px {
+    letter-spacing: 10px;
+}
+
+.neg2px {
+    letter-spacing: -2px;
+}
+
+.wordspace1em {
+    word-spacing: 1em;
+}
+
+.lineheight1p5 {
+    line-height: 1.5em;
+}
+
+.both {
+    word-spacing: 1em;
+    line-height: 1.5em;
+}
+
+.indent {
+    text-indent: 40px;
+}
+
+.smallcaps {
+    font-variant: small-caps;
+}
+
+.centeralign {
+    text-align: center;
+
+}
+
+.decorated {
+    text-decoration: underline;
+}
+
+.transformed {
+    text-transform: uppercase;
+}
+
+.indent {
+    text-indent: 40px;
 }
