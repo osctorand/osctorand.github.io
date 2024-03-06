@@ -1,0 +1,26 @@
+.small {
+    font-size: 0.5em;
+}
+
+.normal {
+    font-size: 1em;
+}
+
+.large {
+    font-size: 1.5em;
+}
+
+.larger {
+    font-size: 2em;
+}
+
+
+.box {
+    width: 20em;
+    height: fit-content;
+    background-image: linear-gradient(to bottom, #daf1db, #61cf67);
+}
+
+span {
+    font-family: 'Courier New', Courier, monospace;
+}

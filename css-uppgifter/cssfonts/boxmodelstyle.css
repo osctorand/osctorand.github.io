@@ -1,0 +1,28 @@
+.first {
+    background-color: #6ce972;
+    width: 10em;
+    height:4em;
+    margin:40px;
+    
+
+}
+
+.second {
+    background-color: #26d82f;
+    width: 16em;
+    height:6em;
+    margin:20px;
+    padding:20px;
+
+}
+
+.third {
+    background-color: #0f9e0f;
+    margin:30px;
+    padding:30px;
+    border: 7px solid #22AABB;
+    width: 20em;
+}
+
+
+

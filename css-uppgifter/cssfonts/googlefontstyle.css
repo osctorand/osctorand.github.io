@@ -1,0 +1,37 @@
+
+
+.jacquarda-bastarda-9-regular {
+    font-family: "Jacquarda Bastarda 9", serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+    width: 200px;
+    height: fit-content;
+    background-image: linear-gradient(to bottom, #daf1db, #dc8ce4);
+
+}
+
+.bigelow-rules-regular {
+    font-family: "Bigelow Rules", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+
+    width: 200px;
+    height: fit-content;
+    background-image: linear-gradient(to bottom, #daf1db, #dc8ce4);
+}
+
+.luckiest-guy-regular {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+    width: 200px;
+    height: fit-content;
+
+    background-image: linear-gradient(to bottom, #daf1db, #dc8ce4);
+    text-shadow: #000000 5px 5px 5px;
+
+}
