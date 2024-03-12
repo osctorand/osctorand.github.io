@@ -1,0 +1,52 @@
+@font-face {
+    font-family:myRoboto;
+    src: url(Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family:myMickey;
+    src: url("Mickeys Merry Christmas.ttf");
+}
+
+@font-face {
+    font-family: myRistretto;
+    src: url(ristretto.woff);
+}
+@font-face {
+    font-family: myMayestica;
+    src: url(Mayestica.otf);
+}
+
+.first {
+    font-family: myRoboto;
+    width: 20em;
+    height: fit-content;
+    padding: 2em;
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+}
+
+.second {
+    font-family: myMickey;
+    width: 20em;
+    height: fit-content;
+    padding: 2em;
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+}
+
+.third
+{
+    font-family: myRistretto, sans-serif;
+    width: 20em;
+    height: fit-content;
+    padding: 2em;
+    background-image: linear-gradient(45deg, #027912, #700751);
+}
+
+.fourth
+{
+    font-family: myMayestica;
+    width: 20em;
+    height: fit-content;
+    padding: 2em;
+    background-image: linear-gradient(45deg, #027912, #700751);
+}

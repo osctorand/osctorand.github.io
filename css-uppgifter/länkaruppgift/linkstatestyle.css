@@ -1,0 +1,24 @@
+a:link {
+    color: blue;
+}
+
+a:active {
+    color: red;
+}
+
+a:hover {
+    color: green;
+}
+
+a:visited {
+    color: purple;
+}
+
+body {
+    background-color: #87e2cc;
+}
+
+span {
+    margin-right: 2em;
+    font-family: 'Courier New', Courier, monospace;
+}

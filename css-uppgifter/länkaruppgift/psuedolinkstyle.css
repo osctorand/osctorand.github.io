@@ -1,0 +1,26 @@
+span {
+    margin-right: 2em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: #b687e2;
+}
+
+a:link {
+    color: rgb(70, 230, 70);
+}
+
+a:visited {
+    color: rgb(20, 158, 50);
+}
+
+a:focus {
+    color: rgb(221, 255, 32);
+    background-color: rgb(48, 231, 222);
+}
+
+a:hover {
+    color: rgb(190, 247, 57);
+    background-color: rgb(32, 168, 43);
+}
