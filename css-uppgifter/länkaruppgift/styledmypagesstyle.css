@@ -7,6 +7,12 @@ div {
     height: 30em;
 }
 
+a:focus
+{
+    background-color: #6380ff;
+    box-shadow: 1px 2px 2px #202020;
+}
+
 a:hover {
     background-color: #6380ff;
     box-shadow: 1px 2px 2px #202020;
@@ -18,12 +24,6 @@ a:active {
     position: relative;
     top: 3px;
 
-}
-
-a:focus
-{
-    background-color: #6380ff;
-    box-shadow: 1px 2px 2px #202020;
 }
 
 h1 {
