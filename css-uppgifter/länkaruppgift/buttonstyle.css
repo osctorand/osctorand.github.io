@@ -1,0 +1,18 @@
+a {
+    text-decoration: none;
+    border-left: 0.5em ridge #2e4cf8;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-top-right-radius: 0.4em;
+    border-bottom-right-radius: 0.4em;
+    background-color: rgb(146, 146, 146);
+    width: 5em;
+    height: 2em;
+    padding: 1em;
+    color: aliceblue;
+    
+}
+
+body {
+    background-color: antiquewhite;
+}
