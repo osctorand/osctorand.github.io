@@ -1,0 +1,40 @@
+.images {
+    background-color: rgb(138, 201, 255);
+    box-shadow: 5px 5px 5px #1a1a1a;
+    float: left;
+    display: flex;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#biden {
+    border-style: solid;
+    border-color: red;
+}
+
+#zelensky {
+    border-style: solid;
+    border-color: blue;
+}
+
+#putin {
+    border-style: solid;
+    border-color: green;
+}
+
+figure {
+    width: fit-content;
+    height: fit-content;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 0.5em;
+}
+
+figcaption {
+    text-align: center;
+}
