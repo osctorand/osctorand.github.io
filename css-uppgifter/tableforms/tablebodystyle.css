@@ -27,3 +27,11 @@ thead {
 tfoot {
     color: blue;
 }
+
+#totalall {
+    border-right: none;
+}
+
+#totalsum {
+    border-left: none;
+}

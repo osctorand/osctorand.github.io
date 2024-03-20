@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="tablebodystyle.css">
+    </head>
+
+    <body>
+        <h1>Nästlad tabell</h1>
+        <table>
+            <caption>Fruits/week</caption>
+            <thead>
+                <tr>
+                    <td>January</td>
+                    <td>February</td>
+                    <td>March</td>
+                </tr>
+            </thead>
+            <tr>
+                <td>
+                    <table>
+                        <caption><em>frukter</em></caption>
+                        <thead>
+                            <tr>
+                                <td>S.N</td>
+                                <td>Item</td>
+                                <td>Quantity</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Apple</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Mango</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Orange</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">Total</td>
+                                <td>5</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <caption><em>frukter</em></caption>
+                        <thead>
+                            <tr>
+                                <td>S.N</td>
+                                <td>Item</td>
+                                <td>Quantity</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Apple</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Mango</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Orange</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">Total</td>
+                                <td>5</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <caption><em>frukter</em></caption>
+                        <thead>
+                            <tr>
+                                <td>S.N</td>
+                                <td>Item</td>
+                                <td>Quantity</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Apple</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Mango</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Orange</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td id="total" colspan="2">Total</td>
+                                <td>5</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td id="totalall" colspan="2">Total</td>
+                    <td id="totalsum">25</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+
+</html>

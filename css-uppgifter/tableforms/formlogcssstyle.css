@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(185, 228, 100);
+}
+
+form label {
+    color:blue;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 5em;
+    margin-bottom: 2em;
+}
+
+form input {
+    box-shadow: 2px 2px 2px black;
+}

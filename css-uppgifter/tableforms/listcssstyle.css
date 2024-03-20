@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(194, 231, 118);
+}
+
+#roman {
+    border-style: solid;
+    border-color: blue;
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}
+
+#deflist {
+    background-color: aliceblue;
+    color: blue;
+    border-style: solid;
+    border-color: blue;
+    padding: 1em;
+}
+
+#deflist dt {
+    font-style: italic;
+
+}
+
+#stylenone {
+    list-style-type: none;
+    border-style: solid;
+    border-color: blue;
+}
+
+#square {
+    list-style-type: square;
+    border-style: solid;
+    border-color: blue;
+}
+
+ol {
+    border-style: solid;
+    border-color: blue;
+}
