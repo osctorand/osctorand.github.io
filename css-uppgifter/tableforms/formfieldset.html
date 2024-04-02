@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="formfieldsetstyle.css">
+    </head>
+
+    <body>
+        <form>
+            <fieldset>
+                <legend>login</legend>
+                <label for="username">Username: </label>
+                <input type="text" name="username" id="username" required>
+                <br>
+                <label for="password">Password: </label>
+                <input type="password" name="password" id="password" required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Gender</legend>
+                <label for="radmale">Male</label>
+                <input type="radio" name="radmale" id="radmale">
+                <br>
+                <label for="radfem">Female</label>
+                <input type="radio" name="radfem" id="radfem">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Programming skill</legend>
+                <label for="chkjava">Java</label>
+                <input type="checkbox" name="chkjava" id="chkjava">
+                <br>
+                <label for="chkcpp">C++</label>
+                <input type="checkbox" name="chkcpp" id="chkcpp">
+                <br>
+                <label for="chkcs">C#</label>
+                <input type="checkbox" name="chkcs" id="chkcs">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Fruit</legend>
+                <label for="fruitlist">Choose a fruit</label>
+                <select name="fruitlist" id="fruitlist">
+                    <option value="apple">Apple</option>
+                    <option value="banana">Banana</option>
+                    <option value="orange">Orange</option>
+                </select>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Comment</legend>
+                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter comment here"></textarea>
+            </fieldset>
+        </form>
+    </body>
+
+</html>

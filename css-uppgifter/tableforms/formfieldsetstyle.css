@@ -1,0 +1,22 @@
+fieldset {
+    display: inline-block;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    padding: 20px;
+    width: 20em;
+}
+
+form label {
+    color:blue;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 5em;
+    margin-bottom: 2em;
+    
+}
+
+form input {
+    display: inline-block;
+    just
+}
