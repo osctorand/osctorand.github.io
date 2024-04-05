@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <a href="http://www.aftonbladet.se">läs aftonbladet</a>
+        <script>
+            window.onload = function () {
+                alert("Välkommen till min sida");
+            }
+            window.onbeforeunload = function (event) {
+                event.preventDefault();
+                return (event.ReturnValue == "");
+            }
+
+            document.write(eval("3+4"));
+
+        </script>
+    </body>
+
+</html>

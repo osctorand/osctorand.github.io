@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="orginal1">haris drapic webbutveckling</p>
+    <p id="orginal2">haris drapic webbutveckling</p>
+
+    <script>
+        let orginal1 = document.getElementById("orginal1").innerHTML;
+        let orginal2 = document.getElementById("orginal2").innerHTML;
+        let result1 = "";
+        let result2 = "";
+        for (var i = 0; i < document.getElementById("orginal1").innerHTML.length; i++) {
+            result1 += orginal1.substring(i);
+        }
+        Document.write(result1);
+    </script>
+</body>
+</html>
