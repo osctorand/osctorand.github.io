@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            var cities = ["Dubai", "Paris", "Mumbai"];
+
+            var city = prompt("lägg till en stad", "Dallas");
+            cities.push(city);
+
+            var city = prompt("lägg till en stad", "Houston");
+            cities.push(city);
+
+            var city = prompt("lägg till en stad", "Madrid");
+            cities.push(city);
+
+            cities.pop();
+            document.write("after pop <br>")
+            cities.forEach((element) => document.write(element + "<br>"));
+            
+            cities.shift();
+
+            document.write("after shift <br>")
+            cities.forEach((element) => document.write(element + "<br>"));
+
+
+            cities.splice(2, 1, "Stockholm");
+            document.write("after stockholm splice <br>")
+            cities.forEach((element) => document.write(element + "<br>"));
+
+            cities.splice(2, 1);
+            document.write("after slot 2 remove <br>")
+            cities.forEach((element) => document.write(element + "<br>"));
+
+
+
+            
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+
+</html>

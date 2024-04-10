@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var heltal = prompt("skriv ett heltal", 21);
+        var parsedInt = Number.parseInt(heltal, 10);
+        if (!Number.isNaN(parsedInt)) {
+            document.write("number is " + parsedInt + "<br>");
+            document.write("log10 is " + Math.log(parsedInt).toFixed(2) + "<br>");
+            document.write("sqrt is " + Math.sqrt(parsedInt).toFixed(2) + "<br>");
+            document.write("pi is " + Math.PI.toFixed(2) + "<br>");
+            document.write("power to 2 is " + Math.pow(parsedInt, 2).toFixed(2) + "<br>");
+            document.write("sin is " + Math.sin(parsedInt).toFixed(2) + "<br>");
+            document.write("random between 5 and 15 is " + (5 + (Math.random() * 10)).toFixed(2) + "<br>");
+            
+        } else {
+            document.write("Du skrev inte ett heltal");
+        }
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
