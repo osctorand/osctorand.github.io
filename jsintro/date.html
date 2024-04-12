@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            var d = new Date();
+            document.write("Datum: " + d + "<br>");
+            var sd = new Date("Aug 30, 2014");
+            document.write("Specifikt datum: " + sd + "<br>");
+            document.write("År: " + d.getFullYear() + "<br>");
+            document.write("Tid: " + d.toTimeString() + "<br>");
+
+            var lastday = new Date("Dec 31, " + d.getFullYear());
+            var daysleft = Math.floor((lastday - d) / (1000 * 60 * 60 * 24));
+            document.write("Dagar tills nyår: " + daysleft + "<br>");
+
+
+        </script>
+    </head>
+
+    <body>
+    </body>
+
+</html>
