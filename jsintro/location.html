@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function btnAssign() {
+            window.location.assign("https://www.aftonbladet.se")
+        }
+        function btnReplace() {
+            window.location.replace("https://www.expressen.se")
+        }
+        function btnReload() {
+            window.location.reload()
+        }
+    
+        document.write("<strong>Href: " + window.location.href + "</strong><br>");
+        document.write("<strong>Pathname: " + window.location.pathname + "</strong><br>");
+        document.write("<strong>Protocol: " + window.location.protocol + "</strong><br>");
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        button {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <button onclick="javascript:btnAssign()">Gå till - assign</button>
+    <button onclick="javascript:btnReplace()">Gå till - replace</button>
+    <button onclick="javascript:btnReload()">Ladda om - uppdatera</button>
+</body>
+</html>

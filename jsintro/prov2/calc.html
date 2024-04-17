@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            var tal1;
+            var tal2;
+            function plus() {
+                console.log(document.getElementById("tal1").value)
+                tal1 = parseInt(document.getElementById("tal1").value);
+                tal2 = parseInt(document.getElementById("tal2").value);
+                alert(tal1 + tal2);
+            }
+
+            function minus() {
+                tal1 = parseInt(document.getElementById("tal1").value);
+                tal2 = parseInt(document.getElementById("tal2").value);
+                alert(tal1 - tal2);
+            }
+
+            function gånger() {
+                tal1 = parseInt(document.getElementById("tal1").value);
+                tal2 = parseInt(document.getElementById("tal2").value);
+                alert(tal1 * tal2);
+            }
+
+            function division() {
+                tal1 = parseInt(document.getElementById("tal1").value);
+                tal2 = parseInt(document.getElementById("tal2").value);
+                alert(tal1 / tal2);
+                
+            }
+        </script>
+        <style>
+            button {
+                background-color: aqua;
+                margin: 2em;
+                width: 6em;
+                height: 2em;
+            }
+
+            form label {
+                margin: 1em;
+            }
+
+            form input {
+                margin: 1em;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form>
+            <label for="tal1">Tal 1: </label>
+            <input type="text" id="tal1" name="tal1">
+            <br>
+            <label for="tal2">Tal 2: </label>
+            <input type="text" id="tal2" name="tal2">
+            <br>
+            <button type="button" onclick="javascipt:plus()">+</button>
+            <button type="button" onclick="javascipt:minus()">-</button>
+            <button type="button" onclick="javascipt:gånger()">*</button>
+            <button type="button" onclick="javascipt:division()">/</button>
+        </form>
+    </body>
+
+</html>

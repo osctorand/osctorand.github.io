@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function intervalSet() {
+            var yellowSquare = document.getElementById("yellowSquare");
+            var leftPos = 15;
+
+            setInterval(() => {
+                yellowSquare.style.left = leftPos + "px";
+                leftPos += 15;
+            }, 500);
+        }
+
+        function timeoutSet() {
+            var yellowSquare = document.getElementById("yellowSquare");
+            //get the current left position and remove "px" from the string
+            var leftPos = yellowSquare.style.left.slice(0, -2);
+
+            setTimeout(() => {
+                yellowSquare.style.left = leftPos + "px";
+                leftPos += 15;
+            }, 500);
+        }
+        function timeoutClear() {
+
+        }
+        function intervalClear() {
+
+        }
+    </script>
+
+    <style>
+
+        button {
+            display: block;
+            margin-top: 10px;
+            width: 8em;
+            height: 2em;
+        }
+
+        #yellowSquare {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            margin-top: 10px;
+            border: 1px solid;
+            border-radius: 5px;
+            position: absolute;
+            top: 200px;
+            left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <button onclick="javascript:intervalSet()">Set interval</button>
+    <button onclick="javascript:timeoutSet">Set timeout</button>
+    <button onclick="javascript:timeoutClear">Clear timeout</button>
+    <button onclick="javascript:intervalClear">Clear interval</button>
+    <div id="yellowSquare"></div>
+    
+</body>
+</html>

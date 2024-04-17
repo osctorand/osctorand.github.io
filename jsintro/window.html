@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            var popupWindow;
+
+            function popupOpen() {
+                popupWindow = window.open("yeskinh.jpg", "_blank", "width=500, height=500");
+                popupWindow.focus();
+            }
+
+            function popupClose() {
+                popupWindow.close();
+            }
+
+            function parentInfo() {
+                document.getElementById("windowInfo").innerHTML = (
+                    "outerHeight: " + popupWindow.outerHeight + "<br>" +
+                    "outerWidth: " + popupWindow.outerWidth + "<br>" +
+                    "innerHeight: " + popupWindow.innerHeight + "<br>" +
+                    "innerWidth: " + popupWindow.innerWidth + "<br>" +
+                    "screen height: " + screen.height + "<br>" +
+                    "screen width: " + screen.width + "<br>"
+                );
+            }
+        </script>
+        <style>
+            button {
+                margin: 10px;
+                display: block;
+                width: 15em;
+            }
+        </style>
+    </head>
+
+    <body>
+        <button onclick="javascript:popupOpen()">Öppna popup-fönster</button>
+        <button onclick="javascript:popupClose()">Stäng popup-fönster</button>
+        <button onclick="javascript:parentInfo()">Info om parent fönster</button>
+        <p id="windowInfo"></p>
+    </body>
+
+</html>

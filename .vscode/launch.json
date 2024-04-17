@@ -12,7 +12,10 @@
             "reAttach": true,
             "reloadOnAttach": true,
             "clearConsoleOnReload": true,
-            "file": "${file}"
+            "reloadOnChange": {
+                "watch": ["${file}"],
+            },
+            "file": "${file}",
         },
 
         {
