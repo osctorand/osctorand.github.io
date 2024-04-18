@@ -12,29 +12,32 @@
                 console.log(document.getElementById("tal1").value)
                 tal1 = parseInt(document.getElementById("tal1").value);
                 tal2 = parseInt(document.getElementById("tal2").value);
-                alert(tal1 + tal2);
+                document.getElementById("result").value = (tal1 + tal2);
+
             }
 
             function minus() {
                 tal1 = parseInt(document.getElementById("tal1").value);
                 tal2 = parseInt(document.getElementById("tal2").value);
-                alert(tal1 - tal2);
+                document.getElementById("result").value = (tal1 - tal2);
             }
 
             function gånger() {
                 tal1 = parseInt(document.getElementById("tal1").value);
                 tal2 = parseInt(document.getElementById("tal2").value);
-                alert(tal1 * tal2);
+                document.getElementById("result").value = (tal1 * tal2);
             }
 
             function division() {
                 tal1 = parseInt(document.getElementById("tal1").value);
                 tal2 = parseInt(document.getElementById("tal2").value);
-                alert(tal1 / tal2);
-                
+                document.getElementById("result").value = (tal1 / tal2);
+
             }
         </script>
         <style>
+            
+
             button {
                 background-color: aqua;
                 margin: 2em;
@@ -47,6 +50,10 @@
             }
 
             form input {
+                margin: 1em;
+            }
+
+            #result {
                 margin: 1em;
             }
         </style>
@@ -64,6 +71,8 @@
             <button type="button" onclick="javascipt:minus()">-</button>
             <button type="button" onclick="javascipt:gånger()">*</button>
             <button type="button" onclick="javascipt:division()">/</button>
+            <br>
+            <input type="text" name="result" id="result" placeholder="resultat visas här" readonly>
         </form>
     </body>
 
