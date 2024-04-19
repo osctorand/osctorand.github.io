@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prov 2 - Del 2</title>
+
+    <script>
+        var array = [];
+        function printArray () {
+            document.getElementById("result").innerHTML = "";
+            for (let i = 0; i < array.length; i++) {
+                document.getElementById("result").innerHTML += "array[" + i + "] = " + array[i] + "<br>";
+            }
+        }
+
+        function popArray () {
+            if (array.length == 0) {
+                alert("Array must have at least one element");
+            }
+
+            else {
+            array.pop();
+            }
+
+        }
+
+        function pushArray () {
+            if (document.getElementById("tbxStad").value == "") {
+                alert("Textbox must be filled");
+            }
+
+            else {
+                var stad = document.getElementById("tbxStad").value;
+                array.push(stad);
+            }
+        }
+
+        function spliceArray () {
+            if (array.length < 3) {
+                alert("Array must have at least 3 elements");
+            }
+
+            else {
+                array.splice(array.length, 0, "Stockholm");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label for="tbxStad">Stad: </label>
+        <input type="text" id="tbxStad" name="tbxStad">
+        <p>Push, pop, write, splice - Array</p>
+    </form>
+    <button onclick="javascript:printArray()">Skriv ut array</button>
+    <button onclick="javascript:popArray()">Pop</button>
+    <button onclick="javascript:pushArray()">Push</button>
+    <button onclick="javascript:spliceArray()">Splice</button>
+    <p id="result"></p>
+</body>
+</html>
