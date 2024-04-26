@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .wrapper {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .header {
+                flex-basis: 100%;
+                text-align: center;
+                background-color: #c74c4c;
+            }
+
+            .main {
+                flex-basis: 0px;
+                background-color: #78faef;
+                padding: 1em;
+                order: 2;
+                flex-grow: 3;
+
+            }
+
+            .aside-1 {
+                background-color: #e1ee28;
+                order: 1;
+                text-align: center;
+            }
+
+            .aside-2 {
+                background-color: #ff35bc;
+                order: 3;
+                text-align: center;
+            }
+
+            .footer {
+                display: flex;
+                flex-basis: 100%;
+                order: 4;
+                background-color: lightgreen;
+                justify-content: center;
+            }
+
+            .aside {
+                flex-grow: 1;
+                flex-basis: 0px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="header">Header</div>
+            <div class="main">
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+                    amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            </div>
+            <div class="footer">Footer</div>
+            <div class="aside aside-1">Aside 1</div>
+            <div class="aside aside-2">Aside 2</div>
+        </div>
+    </body>
+
+</html>

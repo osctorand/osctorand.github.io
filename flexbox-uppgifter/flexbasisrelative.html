@@ -8,37 +8,39 @@
         <style>
             .container {
                 display: flex;
-                align-content: flex-start;
-                flex-wrap: wrap;
-
+                flex-flow: wrap;
+                max-width: 450px;
             }
+
             div div {
                 display: flex;
                 background-color: yellow;
-
+                border-radius: 5px;
+                border: 2px solid black;
+                align-content: stretch;
+                flex: 1 1 400px;
             }
 
             .odd {
-                width: 10em;
-            }
-
-            .even.second {
-
+                flex-basis: 50px;
             }
 
             .even {
-
+                flex-basis: 100px;
             }
 
             .odd.fifth {
-
+                flex-basis: 200px;
             }
 
             .even.eighth {
+                flex-basis: 200px;
+            }
 
+            .even.second {
+                flex-basis: 200px;
             }
         </style>
-        
     </head>
 
     <body>

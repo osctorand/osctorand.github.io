@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            .wrapper {
+                display: flex;
+        
+
+            }
+            .wrapper > div {
+                display: flex;
+                background-color: blue;
+                margin: 1em;
+                flex: 1 1 0px;
+            }
+
+            .second {
+                display: flex;
+            }
+
+            .second > div {
+                display: flex;
+                flex-basis: 100%;
+            }
+
+            #green {
+                background-color: green;
+                display: flex;
+            }
+
+            #red {
+                background-color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="second">1 <div id="green"> 1a </div>
+                <div id="red"> 1b </div>
+            </div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+        <div class="wrapper">
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+        </div>
+        <div class="wrapper">
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+        </div>
+    </body>
+
+</html>
