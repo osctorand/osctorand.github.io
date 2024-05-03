@@ -9,6 +9,9 @@
         <style>
             .wrapper {
                 display: flex;
+                text-align: center;
+                padding: 0.5em;
+                color: white;
         
 
             }
@@ -16,21 +19,31 @@
                 display: flex;
                 background-color: blue;
                 margin: 1em;
-                flex: 1 1 0px;
+                flex-basis: 100%;
+                flex-flow: column;
             }
 
             .second {
                 display: flex;
+                flex-basis: 100%;
+                text-align: center;
+                
             }
 
             .second > div {
                 display: flex;
                 flex-basis: 100%;
+                margin: 0.5em;
+                justify-content: center;
+                border: 0.1em solid black;
+                border-radius: 0.1em;
             }
 
             #green {
                 background-color: green;
                 display: flex;
+
+                
             }
 
             #red {

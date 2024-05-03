@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+
+            body {
+                background-color: lightgreen;
+            }
+            .wrapper {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .wrapper label {
+                flex: 1;
+            }
+
+            .wrapper input {
+                flex: 5;
+                flex-basis: 0px;
+            }
+
+            .form-row {
+                display: flex;
+                flex-basis: 100%;
+                
+            }
+
+            #name #cityborn #email {
+                padding-bottom: 0.5em;
+                padding-top: 0.5em;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <form>
+            <ul class="wrapper">
+                <li class="form-row">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name">
+                </li>
+                <li class="form-row">
+                    <label for="cityborn">City-born : </label>
+                    <input type="text" id="cityborn">
+                </li>
+                <li class="form-row">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email">
+                </li>
+                <li class="form-row">
+                    <button type="submit">Submit:</button>
+                </li>
+            </ul>
+        </form>
+    </body>
+
+</html>
