@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body {
+                background-color: lightgreen;
+            }
+
+            .wrapper {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            .wrapper>img {
+                display: flex;
+                box-shadow: 3px 2px 0px red;
+                flex-basis: 100%;
+                margin-bottom: 10px;
+            }
+
+            @media screen and (min-width: 450px) and (max-width: 900px) {
+                .wrapper {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+
+                .wrapper>img {
+                    flex-basis: 0px;
+
+                }
+
+                .first {
+                    order: 1;
+                    flex-basis: 0px;
+                    flex-grow: 1;
+                    margin-right: 5px;
+                    
+                }
+
+                .second {
+                    order: 2;
+                    flex-basis: 0px;
+                    flex-grow: 1;
+                    margin-left: 5px;
+                }
+
+                .third {
+                    order: 3;
+                    flex-basis: 100%;
+                    flex-grow: 1;
+                    min-width: 80%;
+                }
+            }
+
+            @media screen and (min-width: 900px){
+                .wrapper {
+                    flex-direction: row;
+                    flex-wrap: nowrap
+                }
+
+                .wrapper>img {
+                    width: 100%;
+                    height: auto;
+                    max-height: none;
+                    padding: 0px;
+                    margin: 5px;
+
+                }
+
+                .first, .second, .third {
+                    flex-basis: 0px;
+                    flex-grow: 1;
+                    min-width: unset;
+
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <img class="first" src="foto1s.png" alt="foto1">
+            <img class="second" src="foto2s.png" alt="foto2">
+            <img class="third" src="foto3s.png" alt="foto3">
+        </div>
+    </body>
+
+</html>

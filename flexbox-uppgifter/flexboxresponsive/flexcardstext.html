@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .wrapper > * {
+                box-shadow: 5px 5px 1px black;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+
+            .footer {
+                order: 1;
+                flex: 1 0px;
+                text-align: center;
+                background-color: lightgreen;
+                padding: 0.7em;
+            }
+
+            .aside-3 {
+                order: 2;
+                text-align: center;
+                background-color: coral;
+                padding: 0.6em;
+            }
+
+            .aside-2 {
+                order: 3;
+                padding: 0.6em;
+                text-align: center;
+            }
+
+            .aside-1 {
+                order: 4;
+                padding: 0.7em;
+                background-color: yellow;
+                flex-basis: 100%;
+            }
+
+            .main {
+                order: 5;
+                background-color: aquamarine;
+            }
+
+            .header {
+                order: 6;
+                background-color: lightsalmon;
+                text-align: center;
+                padding: 0.6em;
+            }
+
+            .wrapper {
+                display: flex;
+                flex-direction: column;
+            }
+
+            @media screen and (min-width: 500px) and (max-width: 800px) {
+                .wrapper {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+
+                .header {
+                    order: 1;
+                }
+
+                .main {
+                    order: 2;
+
+                }
+                
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="header">Beginning</div>
+            <div class="main">
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+                    amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            </div>
+            <img src="foto3s.png" class="aside aside-1" alt="bild">
+            <div class="aside aside-2">Aside section 1</div>
+            <div class="aside aside-3">Aside section 2</div>
+            <div class="footer">This is the end.</div>
+        </div>
+    </body>
+
+</html>

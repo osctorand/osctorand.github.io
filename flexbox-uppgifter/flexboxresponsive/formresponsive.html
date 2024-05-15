@@ -27,12 +27,43 @@
             .form-row {
                 display: flex;
                 flex-basis: 100%;
+                margin-bottom: 1em;
                 
             }
 
             #name #cityborn #email {
                 padding-bottom: 0.5em;
                 padding-top: 0.5em;
+            }
+
+            button {
+                margin-left: auto;
+            }
+
+            @media screen and (max-width: 1200px) and (min-width: 950px) {
+                .wrapper input {
+                    flex: 4;
+                }
+                
+            }
+
+            @media screen and (max-width: 950px) and (min-width: 700px) {
+                .wrapper input {
+                    flex: 3;
+                }
+            }
+
+            @media screen and (max-width: 700px) and (min-width: 400px) {
+                .wrapper input {
+                    flex: 2;
+                }
+                
+            }
+
+            @media screen and (max-width: 400px) {
+                .wrapper input {
+                    flex: 1;
+                }
             }
 
         </style>
