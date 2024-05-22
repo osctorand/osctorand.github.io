@@ -61,16 +61,92 @@
                 .wrapper {
                     flex-direction: row;
                     flex-wrap: wrap;
+                    box-shadow: 5px 5px 2px black;
+                    
+                }
+
+                .wrapper > * {
+                    box-shadow: none;
+                    margin-bottom: 0px;
                 }
 
                 .header {
                     order: 1;
+                    flex-basis: 100%;
                 }
 
                 .main {
                     order: 2;
+                    padding: 1em;
 
                 }
+
+                .aside-1 {
+                    order: 3;
+                    flex: 1 1 0px;
+                }
+
+                .aside-2 {
+                    order: 4;
+                    flex: 1 1 0px;
+                }
+
+                .aside-3 {
+                    order: 5;
+                    flex: 1 1 0px;
+                }
+
+                .footer {
+                    order: 6;
+                    flex-basis: 100%;
+                }
+                
+            }
+
+            @media screen and (min-width: 800px) {
+
+                .wrapper {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    box-shadow: 5px 5px 2px black;
+                }
+
+                .wrapper > * {
+                    box-shadow: none;
+                    margin-bottom: 0px;
+                }
+
+                .header {
+                    order: 1;
+                    flex-basis: 100%;
+                }
+                
+                .aside-2 {
+                    order: 2;
+                    flex: 1 0 0px;
+
+                }
+                
+                .aside-1 {
+                    order: 3;
+                    flex: 2 0 0px;
+                }
+                .aside-3 {
+                    order: 4;
+                    flex: 1 0 0px;
+                }
+
+                .main {
+                    order: 5;
+                    flex: 3 0 0px;
+                    padding: 1em;
+                }
+
+                .footer {
+                    order: 6;
+                    flex-basis: 100%;
+                }
+
                 
             }
         </style>

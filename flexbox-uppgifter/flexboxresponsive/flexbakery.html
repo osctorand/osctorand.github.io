@@ -5,6 +5,146 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <style>
+            .all {
+                
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+            }
+
+            .nav {
+                
+                display: flex;
+                order: 1;
+                flex: 1 100%;
+                flex-direction: row;
+                flex-wrap: wrap;
+                background-image: url("croissants.jpg");
+                color: white;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            .nav ul {
+                display: flex;
+                flex: 1 100%;
+                flex-direction: column;
+                justify-content: space-around;
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .nav ul li {
+                border: 1px solid rgb(255, 255, 255);
+                border-radius: 0.4em;
+                padding: 0.8em;
+                text-align: center;
+                margin: 0.3em;
+            }
+
+            .meny {
+                display: flex;
+                order: 2;
+                flex: 1 100%;
+                flex-direction: column;
+            }
+
+            .main {
+                display: flex;
+                order: 3;
+                flex: 1 100%;
+                flex-direction: column;
+                border: 4px double beige;
+                border-radius: 1em;
+            }
+
+            .aside {
+                display: flex;
+                flex-direction: column;
+                order: 4;
+                flex: 1 100%;
+                background-color: beige;
+                border-top-right-radius: 1em;
+            }
+
+            .aside > p {
+                text-transform: initial;
+                font-weight:400;
+            }
+
+            .footer > p {
+                text-transform: initial;
+                font-weight:400;
+            }
+
+            .item {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                flex: 1 0 100%;
+            }
+
+            p {
+                text-transform: uppercase;
+            }
+
+            h1 {
+                border-top: 3px solid brown;
+                border-left: 3px solid brown;
+                padding-left: 1em;
+                font-size: 2.5em;
+            }
+
+            .imgpara {
+                display: flex;
+                flex: 1 0 0px;
+            }
+
+            .footer {
+                display: flex;
+                flex-direction: column;
+                order: 5;
+                flex: 1 100%;
+                background-color: brown;
+                color: white;
+                text-align: center;
+            }
+
+            @media screen and (min-width: 600px) {
+                .all {
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
+
+                .nav {
+
+                }
+
+                .main {
+
+                }
+
+                .aside {
+
+                }
+
+                .footer {
+
+                }
+
+                .item {
+
+                }
+
+                .itempara {
+
+                }
+                
+            }
+
+        </style>
     </head>
 
     <body>
