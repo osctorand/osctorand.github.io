@@ -5,7 +5,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="websitestyle.css">
-        <title>Document</title>
+        <link rel="shortcut icon" href="ukFavicon.ico" type="image/x-icon">
+        <title>Your business</title>
+        <script src="https://kit.fontawesome.com/a0d9593cf1.js" crossorigin="anonymous"></script>
+        <script>
+            function highlight() {
+                let btnHome = document.getElementById("home");
+                let btnAbout = document.getElementById("about");
+                let btnServices = document.getElementById("services");
+                let btnContact = document.getElementById("contact");
+
+                btnHome.style.border = "4px solid yellow";
+                btnAbout.style.border = "4px solid lightskyblue";
+                btnServices.style.border = "4px solid lightskyblue";
+                btnContact.style.border = "4px solid lightskyblue";
+            }
+        </script>
     </head>
 
     <body>
@@ -17,7 +32,7 @@
                 <a href="" id="contact">CONTACT</a>
             </div>
             <div class="adspace">
-                <img src="pic1.jpg" alt="Bild på en spis" id="imgclickable">
+                <img src="pic1.jpg" alt="Bild på en spis" id="imgclickable" onclick="javascript:highlight()">
                 <div id="adtext">
                     <h2>Your Business on the web</h2>
                     <p>Lorem ipsum dolor, massa annat babbel.</p>
@@ -25,39 +40,53 @@
                 </div>
             </div>
             <div class="fourbuttons">
-                <div id="Analytics">
-                    <!-- ikon här --> Analytics <p>Some text about analytics</p>
+                <div id="analytics">
+                    <i class="fa-solid fa-chart-column"></i> <h2>Analytics</h2> <p>Some text about analytics</p>
                 </div>
-                <div id="Marketing">
-                    <!-- ikon här --> Marketing <p>Some text about marketing</p>
+                <div id="marketing">
+                    <i class="fa-solid fa-bullhorn"></i> <h2>Marketing</h2> <p>Some text about marketing</p>
                 </div>
                 <div id="development">
-                    <!-- ikon här --> Development <p>Some text about development</p>
+                    <i class="fa-solid fa-server"></i> <h2>Development</h2> <p>Some text about development</p>
                 </div>
                 <div id="support">
-                    <!-- ikon här --> Support <p>Some text about support</p>
+                    <i class="fa-regular fa-address-card"></i> <h2>Support</h2> <p>Some text about support</p>
                 </div>
             </div>
             <form action="post">
                 <div id="genderdiv">
                     <fieldset id="gender">
-                        <legend>Gender</legend>
-                        <label for="genderMale">Male</label>
-                        <input type="radio" name="gender" id="genderMale">
-                        <label for="genderFemale">Female</label>
-                        <input type="radio" name="gender" id="genderFemale">
+                        <legend>Gender* </legend>
+                        <div id="male">
+                            <label for="genderMale">Male</label>
+                            <input type="radio" name="gender" id="genderMale" required>
+                        </div>
+                        <div id="female">
+                            <label for="genderFemale">Female</label>
+                            <input type="radio" name="gender" id="genderFemale">
+                        </div>
                     </fieldset>
                 </div>
                 <div id="programmingskilldiv">
                     <fieldset id="programmingSkill">
-                        <legend>Programming skills</legend>
-                        <label for="skillJava" class="skillJava">Java</label>
-                        <input type="checkbox" name="programmingSkills" id="skillJava" class="skillJava">
-                        <label for="skillCPP" class="skillCPP">C++</label>
-                        <input type="checkbox" name="programmingSkills" id="skillCPP" class="skillCPP" checked>
-                        <label for="skillCS" class="skillCS">C#</label>
-                        <input type="checkbox" name="programmingSkills" id="skillCS" class="skillCS">
+                        <legend>Programming <br> skills</legend>
+                        <div id="java">
+                            <label for="skillJava">Java</label>
+                            <input type="checkbox" name="programmingSkills" id="skillJava">
+                        </div>
+                        <div id="cpp">
+                            <label for="skillCPP" class="skillCPP">C++</label>
+                            <input type="checkbox" name="programmingSkills" id="skillCPP" checked>
+                        </div>
+                        <div id="cs">
+
+                            <label for="skillCS" class="skillCS">C#</label>
+                            <input type="checkbox" name="programmingSkills" id="skillCS">
+                        </div>
                     </fieldset>
+                    <div id="submit">
+                        <input type="submit" value="Send">
+                    </div>
                 </div>
             </form>
         </div>

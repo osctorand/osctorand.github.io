@@ -17,7 +17,17 @@ body {
     justify-content: flex-end;
 }
 
-#home, #about, #services, #contact {
+.titlemenu>a {
+    box-shadow: 5px 5px 0px lightgreen;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+}
+
+#home,
+#about,
+#services,
+#contact {
     display: flex;
     flex: 1 1 100%;
     justify-content: center;
@@ -28,7 +38,7 @@ body {
 }
 
 #home {
-    justify-self: flex-start;
+
     margin-right: 300px;
     margin-left: 0px;
 }
@@ -42,6 +52,7 @@ body {
     display: flex;
     flex: 0 0 100%;
     background-color: lightgray;
+    box-shadow: 5px 5px 0px yellowgreen;
 }
 
 
@@ -50,6 +61,21 @@ body {
     margin-right: auto;
 }
 
+#adtext>a {
+    text-decoration: none;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    border-radius: 3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#adtext>a:hover {
+    background-color: rgb(35, 85, 154);
+}
 
 .fourbuttons {
     display: flex;
@@ -58,7 +84,7 @@ body {
 
 }
 
-.fourbuttons > div {
+.fourbuttons>div {
     display: flex;
     flex: 1 1 100%;
     flex-direction: column;
@@ -66,15 +92,21 @@ body {
     align-items: center;
     background-color: lightgray;
     margin: 10px;
-    padding: 10px;
+    padding: auto;
+    box-shadow: 5px 5px 0px red;
 }
 
-.fourbuttons > div > p {
+.fourbuttons>div:hover {
+    background-color: rgb(93, 154, 35);
+
+}
+
+.fourbuttons>div>p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8em;
 }
 
-#Analytics {
+#analytics {
     margin-left: 0px;
 }
 
@@ -87,11 +119,174 @@ form {
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
+    height: 16em;
 }
 
-#skillJava, #skillCPP, #skillCS {
+#genderdiv,
+#programmingskilldiv {
+    background-color: lightgray;
+    margin: 10px;
+    box-shadow: 2px 2px 0px darkgreen;
+}
+
+#programmingskilldiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+label {
+    margin-right: 60px;
+    color: blue;
+}
+
+input {
+    margin: auto;
+    margin-right: 10px;
+    float: right;
+
+}
+
+input[type="submit"] {
+    margin: auto;
+}
+
+#submit {
+    display: flex;
+    flex-direction: row;
+
+}
+
+fieldset {
+    margin: 10px;
+}
+
+legend {
+    background-color: lightgreen;
+}
+
+fieldset>div {
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+.fa-chart-column {
+    font-size: 1.7em;
+}
+
+.fa-solid,
+.fa-regular {
+    font-size: 1.7em;
+    margin-top: 5px;
+}
+
+.fa-chart-column {
+    color: blue;
+}
+
+.fa-server {
+    color: red;
+}
+
+.fa-address-card {
+    color: green;
+}
+
+
+@media screen and (max-width: 1100px) and (min-width: 600px) {
+    .titlemenu {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    #home,
+    #about,
+    #services,
+    #contact {
+        flex: 1 1 100%;
+        margin: initial;
+        margin-bottom: 10px;
+    }
+
+    form {
+        display: none;
+    }
+
+    .fourbuttons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    .fourbuttons>div {
+        flex: 1 1 10%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .titlemenu {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .adspace {
+        display: none;
+    }
+
+    form {
+        display: none;
+    }
+
+    #home,
+    #about,
+    #services,
+    #contact {
+        margin: initial;
+        margin-bottom: 10px;
+    }
+
+    .fourbuttons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    .fourbuttons>div {
+        flex: 1 1 32%;
+        margin: 10px;
+       
+    }
+
+    #analytics {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
     
+    #marketing {
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+
+    #development {
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+
+    #support {
+        margin-bottom: 0px;
+        margin-right: 0px;
+    }
+
+
+    
+
+
 }
-
-
-
