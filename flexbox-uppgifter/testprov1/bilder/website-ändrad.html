@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="websitestyle-ändrad.css">
+        <link rel="shortcut icon" href="usaFavicon.ico" type="image/x-icon">
+        <title>Your business</title>
+        <script src="https://kit.fontawesome.com/a0d9593cf1.js" crossorigin="anonymous"></script>
+        <script>
+            function highlight() {
+                let adtitle = document.getElementById("adtitle");
+                let adpara = document.getElementById("adpara");
+                let adbtn = document.getElementById("adbtn");
+                
+                adtitle.style.backgroundColor = "lightgreen";
+                adpara.style.backgroundColor = "lightblue";
+                adbtn.innerHTML = "Read enough";
+
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div id="titlemenuwrapper">
+                <div class="titlemenu1">
+                    <a href="" id="home">HOME</a>
+                    <a href="" id="news">NEWS</a>
+                </div>
+                <div class="titlemenu2">
+                    <a href="" id="about">ABOUT</a>
+                    <a href="" id="services">SERVICES</a>
+                    <a href="" id="contact">CONTACT</a>
+                </div>
+            </div>
+            <div class="adspace">
+                <img src="pic1.jpg" alt="Bild på en spis" id="imgclickable" onclick="javascript:highlight()">
+                <div id="adtext">
+                    <h2 id="adtitle">Your Business on the web</h2>
+                    <p id="adpara">Lorem ipsum dolor, massa annat babbel, och lite till för sakens skull.</p>
+                    <a href="" id="adbtn">Read more</a>
+                </div>
+            </div>
+            <div class="fourbuttons">
+                <div id="analytics">
+                    <i class="fa-solid fa-chart-pie fa-rotate-90" style="color: #FFD43B;"></i>
+                    <h2>Analytics</h2>
+                    <p>Some text about analytics</p>
+                </div>
+                <div id="marketing">
+                    <i class="fa-solid fa-rectangle-ad fa-rotate-270" style="color: #ff0000"></i>
+                    <h2>Marketing</h2>
+                    <p>Some text about marketing</p>
+                </div>
+                <div id="development">
+                    <i class="fa-regular fa-window-maximize" style="color: #0000ff;"></i>
+                    <h2>Development</h2>
+                    <p>Some text about development</p>
+                </div>
+                <div id="support">
+                    <i class="fa-solid fa-phone-flip" style="color: #00ff00;"></i>
+                    <h2>Support</h2>
+                    <p>Some text about support</p>
+                </div>
+            </div>
+            <form>
+                <div id="namediv">
+                    <fieldset id="name">
+                        <legend>Name </legend>
+                        <div id="firstname">
+                            <label for="nameFirst">First name:* </label>
+                            <input type="text" name="name" id="nameFirst" required>
+                        </div>
+                        <div id="lastname">
+                            <label for="nameLast">Last name:* </label>
+                            <input type="text" name="name" id="nameLast" required>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Nationality</legend>
+                        <label for="nationality">Choose a nationality: </label>
+                        <select name="nationality" id="nationality">
+                            <option value="SWE">SWE</option>
+                            <option value="NED" selected>NED</option>
+                            <option value="USA">USA</option>
+                            <option value="GBR">GBR</option>
+                        </select>
+                    </fieldset>
+                </div>
+                <div id="skilldiv">
+                    <fieldset id="skills">
+                        <legend>Skills</legend>
+                        <div id="skillElectricianDiv">
+                            <label for="skillElectrician">Electrician</label>
+                            <input type="checkbox" name="skills" id="skillElectrician">
+                        </div>
+                        <div id="skillBakerDiv">
+                            <label for="skillBaker" class="skillBaker">Baker</label>
+                            <input type="checkbox" name="skills" id="skillBaker" checked>
+                        </div>
+                        <div id="skillCarpenterDiv">
+                            <label for="skillCarpenter" class="skillCarpenter">Carpenter</label>
+                            <input type="checkbox" name="skills" id="skillCarpenter">
+                        </div>
+                    </fieldset>
+                    <div id="submit">
+                        <input type="submit" value="Send" id="formsend">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+
+</html>

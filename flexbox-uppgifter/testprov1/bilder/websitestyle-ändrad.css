@@ -1,0 +1,347 @@
+body {
+    background-color: rgb(103, 241, 144);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#titlemenuwrapper {
+    display: flex;
+    flex: 1 1 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+
+.titlemenu1 {
+    display: flex;
+    flex: 1 1 0px;
+    flex-direction: row;
+    margin-right: 25%;
+}
+
+.titlemenu2 {
+    display: flex;
+    flex: 5 1 0px;
+    flex-direction: row;
+
+}
+
+#titlemenuwrapper>div>a {
+    box-shadow: 6px 6px 0px rgb(213, 49, 114);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+    margin: 10px;
+}
+
+#home,
+#news,
+#about,
+#services,
+#contact {
+    display: flex;
+    flex: 1 1 0px;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    margin: 10px;
+    padding: 10px;
+}
+
+#news {
+
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+#contact {
+    margin-right: 0px;
+}
+
+
+.adspace {
+    display: flex;
+    flex: 0 0 100%;
+    background-color: lightgray;
+    box-shadow: 5px 5px 0px rgb(73, 50, 205);
+}
+
+#adbtn {
+    margin: 20px;
+}
+
+#adtitle {
+    font-size: 2.4em;
+}
+
+#adtext {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#adtext>a {
+    text-decoration: none;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    border-radius: 3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#adtext>a:hover {
+    background-color: rgb(238, 255, 0);
+}
+
+.fourbuttons {
+    display: flex;
+    flex: 1 1 100%;
+    flex-direction: row;
+
+}
+
+.fourbuttons>div {
+    display: flex;
+    flex: 1 1 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    margin: 10px;
+    box-shadow: 5px 5px 0px rgb(182, 84, 51);
+}
+
+.fourbuttons>div:hover {
+    background-color: rgb(217, 255, 0);
+
+}
+
+.fourbuttons>div>p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+}
+
+#analytics {
+    margin-left: 0px;
+}
+
+#support {
+    margin-right: 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    height: 16em;
+}
+
+#namediv,
+#skilldiv {
+    background-color: lightgray;
+    margin: 10px;
+    box-shadow: 2px 2px 0px darkgreen;
+}
+
+#skilldiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+label {
+    margin-right: 60px;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+legend {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60%;
+
+}
+
+input {
+    margin: auto;
+    margin-right: 10px;
+    float: right;
+
+}
+
+input[type="text"] {
+    background-color: yellow;
+}
+
+input[type="submit"] {
+    margin: auto;
+}
+
+#submit {
+    display: flex;
+    flex-direction: row;
+}
+
+#formsend {
+    box-shadow: 2px 2px 0px black;
+}
+
+fieldset {
+    margin: 10px;
+}
+
+legend {
+    background-color: lightgreen;
+}
+
+fieldset>div {
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    margin: 20px;
+}
+
+p {
+    margin: 20px;
+}
+
+.fa-chart-column {
+    font-size: 1.7em;
+}
+
+.fa-solid,
+.fa-regular {
+    font-size: 1.7em;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 650px) {
+    #titlemenuwrapper {
+        flex-direction: column;
+        flex: 1 0 100%;
+        margin-bottom: 10px;
+    }
+
+    .titlemenu1 {
+        flex: 1 1 50%;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .titlemenu2
+    {
+        flex-direction: column;
+        flex: 1 1 100%;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    #titlemenuwrapper > div > a {
+        margin: 0.25em;
+    }
+
+
+    form {
+        display: none;
+    }
+
+    .fourbuttons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    .fourbuttons>div {
+        flex: 1 1 10%;
+    }
+
+    .adspace {
+        flex-direction: row-reverse;
+    }
+
+    #adpara {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    #imgclickable {
+        margin-bottom: 50px;
+
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+
+    .adspace {
+        display: none;
+    }
+
+
+
+    #titlemenuwrapper {
+        flex-direction: column-reverse;
+        flex: 1 0 100%;
+        margin-bottom: 10px;
+    }
+
+    .titlemenu1 {
+        flex: 1 1 50%;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .titlemenu2
+    {
+        flex-direction: column;
+        flex: 1 1 100%;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    #titlemenuwrapper > div > a {
+        margin: 0.25em;
+    }
+
+    form {
+        display: none;
+    }
+
+    #home,
+    #news,
+    #about,
+    #services,
+    #contact {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .fourbuttons {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+    }
+
+    .fourbuttons>div {
+        flex: 1 1 32%;
+        margin: 10px;
+        margin-right: 0px;
+
+    }
+}
